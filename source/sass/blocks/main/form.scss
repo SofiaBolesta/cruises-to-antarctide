@@ -1,0 +1,257 @@
+.form {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.form__wrapper {
+  max-width: 1366px;
+  padding: 50px 163px;
+  display: grid;
+  grid-template-columns: 47% auto;
+  grid-template-rows: auto;
+  gap: 144px;
+
+  @include vp-1023 {
+    width: 100%;
+    max-width: 419px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+  }
+
+  @include vp-767 {
+    padding: 65px 15px;
+    gap: 40px;
+  }
+}
+
+.form__text-container {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  margin: 0 0 30px;
+
+  @include vp-1023 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 150%;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 130%;
+    width: 200px;
+    margin: 0 auto 25px auto;
+    text-align: center;
+  }
+}
+
+.form__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+
+  @include vp-1023 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    width: 352px;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 140%;
+    width: 100%;
+  }
+}
+
+.form__content-container {
+  grid-column: 2;
+  grid-row: 1;
+  background: #011c40;
+  box-shadow: 0 4px 45px rgba(#011c40, 15%);
+  padding: 50px;
+  box-sizing: border-box;
+
+  @include vp-767 {
+    padding: 40px 35px;
+  }
+}
+
+.form__description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0 0 35px;
+  color: #f9fbfd;
+
+  @include vp-767 {
+    text-align: center;
+    margin: 0 auto 35px;
+    line-height: 140%;
+  }
+}
+
+.form__question {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+}
+
+.form__label {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.form__label input {
+  padding: 16px;
+  box-sizing: border-box;
+  font-family: "MontserratRegular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #011c40;
+  background-color: #f9fbfd;
+  border: none;
+
+  &:hover {
+    box-shadow: 0 1px 3px #f9fbfd;
+    border: none;
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: 0 1px 3px #f9fbfd;
+    border: none;
+  }
+
+  &::placeholder {
+    font-family: "MontserratRegular", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(#011c40, 70%);
+  }
+
+  @include vp-767 {
+    padding: 11px 16px;
+  }
+}
+
+.form__label--name input,
+.form__label--email input,
+.form__label--tel input {
+  width: 100%;
+}
+
+.form__label--checkbox input {
+  padding-left: 20px;
+}
+
+.form__style {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
+  box-sizing: border-box;
+  margin: 5px 0 0 0;
+}
+
+.form__label--checkbox input:checked + .form__style::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 12px;
+  height: 11px;
+  background: url("../img/svg/check_mark.svg") no-repeat;
+}
+
+.form__label--checkbox input:hover + .form__style {
+  box-shadow: 0 1px 3px #f9fbfd;
+}
+
+.form__label--checkbox input:focus + .form__style {
+  box-shadow: 0 1px 3px #f9fbfd;
+}
+
+.form__text {
+  font-family: "MontserratRegular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 130%;
+  color: #f9fbfd;
+  opacity: 0.8;
+  margin: 0 0 0 23px;
+  user-select: none;
+
+  @include vp-1023 {
+    margin: 5px 0 0 30px;
+  }
+
+  @include vp-767 {
+    margin: 5px 0 0 25px;
+    line-height: 120%;
+  }
+}
+
+.form__container-button {
+  display: grid;
+}
+
+.form__button {
+  padding: 15px 0;
+  background-color: #f9fbfd;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  border: none;
+  color: #011c40;
+
+  &:hover {
+    box-shadow: 0 1px 3px #f9fbfd;
+    border: none;
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: 0 1px 3px #f9fbfd;
+    border: none;
+  }
+}
+
+.form__picture-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.form__picture-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,119 @@
+.header__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 35px 71px;
+
+  @include vp-1023 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 13px;
+  }
+}
+
+.header__burger {
+  cursor: pointer;
+  display: none;
+  outline: none;
+  width: 29px;
+  height: 12px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  z-index: 3;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.header__burger span {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #f9fbfd;
+  left: 2.7px;
+  transition: background-color 0.3s, opacity 0.3s, transform 0.5s;
+  will-change: transform;
+}
+
+.header__burger:hover span {
+  box-shadow: 0 1px 3px #f9fbfd;
+}
+
+.header__burger span:nth-child(1) {
+  transform: translateY(-4px);
+}
+
+.header__burger span:nth-child(3) {
+  transform: translateY(4px);
+}
+
+/* Крестик */
+
+.header__body.open .header__burger span {
+  background-color: #011c40;
+}
+
+.header__body.open .header__burger:hover span {
+  box-shadow: 0 1px 3px #011c40;
+}
+
+.header__body.open .header__burger span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.header__body.open .header__burger span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__body.open .header__burger span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+
+.header__body.open .menu {
+  @include vp-767 {
+    transform: translateX(-100%);
+    visibility: visible;
+    z-index: 2;
+  }
+}
+
+.header__body.open {
+  @include vp-767 {
+    margin-right: 0;
+    width: 285px;
+  }
+}
+
+.header__body.open .header__logo {
+  @include vp-767 {
+    z-index: 5;
+  }
+}
+
+.header__body .header__logo-desktop {
+  display: block;
+}
+
+.header__body.open .header__logo-desktop {
+  display: none;
+}
+
+.header__body.open .header__logo-mobile {
+  display: block;
+}
+
+.header__body .header__logo-mobile {
+  display: none;
+}
+
+.header__body.open .menu__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #011c40;
+}
