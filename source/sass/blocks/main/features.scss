@@ -1,20 +1,28 @@
 .features {
   width: 100%;
-  margin: 0 auto;
+  padding: 0 118px;
+
+  @include vp-1023 {
+    padding: 0 60px;
+  }
+
+  @include vp-767 {
+    padding: 0 25px;
+  }
 }
 
 .features__wrapper {
   max-width: 1366px;
-  padding: 86px 118px 120px;
+  padding: 86px 0 120px;
+  margin: 0 auto;
 
   @include vp-1023 {
     width: 100%;
-    margin: 0 auto;
-    padding: 100px 60px;
+    padding: 100px 0;
   }
 
   @include vp-767 {
-    padding: 65px 25px;
+    padding: 65px 0;
   }
 }
 
@@ -44,7 +52,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(auto, 260px));
   grid-template-rows: repeat(auto-fit, minmax(auto, 386px));
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 30px;
   margin: 0;
   padding: 0;
@@ -65,9 +73,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: end;
   z-index: 1;
+  height: 386px;
   padding: 27px 25px 25px 25px;
   box-sizing: border-box;
+  overflow: hidden;
 
   @include vp-1023 {
     padding: 35px;
@@ -79,12 +90,30 @@
   }
 }
 
+.features__item:hover .features__body {
+  right: 0;
+}
+
 .features__service-name {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: #f9fbfd;
   margin: 0;
+}
+
+.features__body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  background-color: #011c40;
+  padding: 27px 25px 25px 25px;
+  box-sizing: border-box;
+  transition: 1s;
 }
 
 .features__description-list {

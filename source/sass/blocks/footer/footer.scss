@@ -1,19 +1,28 @@
 .footer__container {
   width: 100%;
-  margin: 0 auto;
+  padding: 0 103px;
   background-color: #011c40;
+
+  @include vp-1023 {
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
 }
 
 .footer__body {
   max-width: 1366px;
-  padding: 50px 103px;
+  padding: 50px 0;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 100px 658px auto;
+  grid-template-columns: 87px 652px auto;
   grid-template-rows: auto;
 
   @include vp-1023 {
     width: 100%;
-    padding: 50px 45px;
+    padding: 50px 0;
     grid-template-columns: 100px auto auto;
   }
 
@@ -21,14 +30,14 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 40px 15px;
+    padding: 40px 0;
   }
 }
 
 .footer__logo {
   grid-column: 1;
   grid-row: 1;
-  margin-right: 30px;
+  margin: 0;
 }
 
 .footer__menu-list,

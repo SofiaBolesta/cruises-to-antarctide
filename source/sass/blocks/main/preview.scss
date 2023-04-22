@@ -1,11 +1,12 @@
 .preview {
   width: 100%;
-  margin: 0 auto;
+  padding: 0 103px;
 }
 
 .preview__wrapper {
   max-width: 1366px;
-  padding: 100px 103px 145px;
+  padding: 100px 0 145px;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 512px auto;
