@@ -6,7 +6,7 @@
     position: absolute;
     right: -335px;
     top: 0;
-    width: 317px;
+    width: 302px;
     background-color: #f9fbfd;
     visibility: hidden;
     transition: transform 0.5s, visibility 0.5s;
@@ -24,12 +24,25 @@
   padding: 0;
 
   @include vp-1023 {
+    display: flex;
+    flex-direction: row;
     justify-content: end;
+    gap: 25px;
   }
 
   @include vp-767 {
-    display: block;
-    padding: 75px 30px 303px 15px;
+    padding: 75px 30px 303px 26px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 8px;
+  }
+}
+
+.menu__item {
+  @include vp-767 {
+    width: 100%;
+    text-align: left;
   }
 }
 
@@ -44,11 +57,24 @@
   border: none;
   outline: none;
   background-color: transparent;
+  user-select: none;
+
+  &:hover {
+    text-shadow: 0 1px 3px #f9fbfd;
+    border: none;
+  }
+
+  &:focus,
+  &:active {
+    text-shadow: 0 1px 3px #f9fbfd;
+    border: none;
+  }
 
   @include vp-1023 {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+    padding: 10px 0 10px 1px;
   }
 
   @include vp-767 {

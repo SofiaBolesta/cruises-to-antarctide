@@ -6,25 +6,27 @@
 .promo__wrapper {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 162px 125px 290px 179px;
+  padding: 162px 125px 290px 198px;
 
   @include vp-1023 {
     width: 100%;
-    padding: 200px 45px 214px;
+    padding: 188px 45px 261px;
   }
 
   @include vp-767 {
     width: 100%;
-    padding: 200px 15px 230px 15px;
+    padding: 112px 15px 210px 15px;
   }
 }
 
 .promo__text {
-  padding: 0 20px;
+  padding: 0;
+  width: 100%;
 }
 
 .promo__text h2 {
   font-weight: 700;
+  width: 100%;
   font-size: 54px;
   line-height: 66px;
   letter-spacing: 2px;
@@ -59,6 +61,7 @@
 
   @include vp-767 {
     font-size: 16px;
+    width: 208px;
   }
 }
 
@@ -69,22 +72,23 @@
   position: absolute;
   top: -130px;
   left: 0;
-  z-index: -1;
-  background-color: #011c40;
+  z-index: -2;
 }
 
 .promo__picture-wrapper img {
   display: block;
   width: 100%;
   height: 100%;
+  min-height: 670px;
   object-fit: cover;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #011c40;
 
   @include vp-1023 {
-    height: 638px;
+    min-height: 689px;
   }
 
   @include vp-767 {
-    min-height: 500px;
+    min-height: 567px;
   }
 }

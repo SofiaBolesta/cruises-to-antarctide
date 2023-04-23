@@ -1,7 +1,7 @@
 .form {
   width: 100%;
   position: relative;
-  padding: 0 118px;
+  padding: 0 163px;
   z-index: 1;
 
   @include vp-1023 {
@@ -18,23 +18,23 @@
   padding: 50px 0;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 47% auto;
+  grid-template-columns: auto auto;
   grid-template-rows: auto;
-  gap: 144px;
+  gap: 158px;
 
   @include vp-1023 {
     width: 100%;
     max-width: 419px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 86px 0 100px;
     display: flex;
-    gap: 60px;
+    gap: 53px;
     flex-direction: column;
   }
 
   @include vp-767 {
-    padding: 65px 0;
-    gap: 40px;
+    padding: 58px 0 65px;
+    gap: 34px;
   }
 }
 
@@ -42,9 +42,11 @@
   grid-column: 1;
   grid-row: 1;
   align-self: center;
+  margin: -9px 0 0 0;
 
   @include vp-767 {
     width: 100%;
+    margin: 0;
   }
 }
 
@@ -52,19 +54,21 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
-  margin: 0 0 30px;
+  margin: 0 0 6px;
 
   @include vp-1023 {
     font-weight: 700;
     font-size: 34px;
     line-height: 150%;
+    letter-spacing: 0.5px;
+    margin: 0 0 5px;
   }
 
   @include vp-767 {
     font-size: 24px;
     line-height: 130%;
     width: 200px;
-    margin: 0 auto 25px auto;
+    margin: 0 auto 13px auto;
     text-align: center;
   }
 }
@@ -74,6 +78,7 @@
   font-size: 18px;
   line-height: 27px;
   margin: 0;
+  width: 347px;
 
   @include vp-1023 {
     font-weight: 400;
@@ -96,11 +101,15 @@
   grid-row: 1;
   background: #011c40;
   box-shadow: 0 4px 45px rgba(#011c40, 15%);
-  padding: 50px;
+  padding: 43px 51px 50px 50px;
   box-sizing: border-box;
 
+  @include vp-1023 {
+    padding: 44px 58px 52px 59px;
+  }
+
   @include vp-767 {
-    padding: 40px 35px;
+    padding: 35px 28px 41px 30px;
   }
 }
 
@@ -108,12 +117,16 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  margin: 0 0 35px;
+  margin: 0 0 28px;
   color: #f9fbfd;
+
+  @include vp-1023 {
+    margin: 0 0 28px;
+  }
 
   @include vp-767 {
     text-align: center;
-    margin: 0 auto 35px;
+    margin: 0 auto 27px;
     line-height: 140%;
   }
 }
@@ -126,6 +139,7 @@
 }
 
 .form__label {
+  position: relative;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -133,7 +147,7 @@
 }
 
 .form__label input {
-  padding: 16px;
+  padding: 11px 16px;
   box-sizing: border-box;
   font-family: "MontserratRegular", "Arial", sans-serif;
   font-weight: 400;
@@ -161,10 +175,6 @@
     line-height: 150%;
     color: rgba(#011c40, 70%);
   }
-
-  @include vp-767 {
-    padding: 11px 16px;
-  }
 }
 
 .form__label--name input,
@@ -179,11 +189,10 @@
 
 .form__style {
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 19px;
+  height: 19px;
   background-color: #f9fbfd;
   box-sizing: border-box;
-  margin: 5px 0 0 0;
 }
 
 .form__label--checkbox input:checked + .form__style::before {
@@ -211,31 +220,41 @@
   line-height: 130%;
   color: #f9fbfd;
   opacity: 0.8;
-  margin: 0 0 0 23px;
+  position: absolute;
+  margin: 3px 0 0 23px;
   user-select: none;
 
   @include vp-1023 {
-    margin: 5px 0 0 30px;
+    position: absolute;
+    margin: 4px 0 0 22px;
   }
 
   @include vp-767 {
-    margin: 5px 0 0 25px;
-    line-height: 120%;
+    position: absolute;
+    margin: -1px 0 0 28px;
+    width: 152px;
+    line-height: 1.2;
   }
 }
 
 .form__container-button {
   display: grid;
+  margin: 28px 0 0 0;
+
+  @include vp-1023 {
+    margin: 27px 0 0;
+  }
 }
 
 .form__button {
-  padding: 15px 0;
+  padding: 11px 0;
   background-color: #f9fbfd;
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
   border: none;
   color: #011c40;
+  user-select: none;
 
   &:hover {
     box-shadow: 0 1px 3px #f9fbfd;
@@ -264,4 +283,5 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background-color: #abddf5;
 }
