@@ -23,9 +23,9 @@
           <img class="header__logo-mobile" src="img/svg/logo-mobile-dark.svg" alt="Логотип компании Круизы в Антарктиду">
         </a>
         <button type="button" class="header__burger" id="burger">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="header__burger-span"></span>
+          <span class="header__burger-span"></span>
+          <span class="header__burger-span"></span>
         </button>
         <nav class="header__nav menu" id="menu">
           <ul class="menu__list">
@@ -68,14 +68,14 @@
     <section class="preview">
       <div class="preview__wrapper">
         <div class="preview__text-wrapper">
-          <h2 class="preview__title">Путешествие на&nbsp;край Земли</h2>
-          <p class="preview__description">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики.
+          <h2>Путешествие на&nbsp;край Земли</h2>
+          <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики.
             Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть:
             ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
         </div>
         <picture class="preview__picture">
-          <source type="image/webp" sizes="(max-width: 767px) 100vw" srcset="img/main/preview/background-preview-mobile@1x.webp, img/main/preview/background-preview-mobile@2x.webp 2x">
-          <source type="image/webp" sizes="100vw" srcset="img/main/preview/background-preview@1x.webp, img/main/preview/background-preview@2x.webp 2x">
+          <source type="image/webp" srcset="img/main/preview/background-preview-mobile@1x.webp, img/main/preview/background-preview-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="img/main/preview/background-preview@1x.webp, img/main/preview/background-preview@2x.webp 2x">
           <img src="img/main/preview/background-preview@1x.jpg" srcset="img/main/preview/background-preview@2x.jpg" width="560" height="301" alt="Фотография пингвинов">
         </picture>
       </div>
@@ -108,8 +108,8 @@
         </ul>
       </div>
       <picture class="advantages__picture-wrapper">
-        <source type="image/webp" sizes="(max-width: 767px) 100vw" srcset="img/main/advantages/background-advantages-mobile@1x.webp, img/main/advantages/background-advantages-mobile@2x.webp 2x">
-        <source type="image/webp" sizes="100vw" srcset="img/main/advantages/background-advantages@1x.webp, img/main/advantages/background-advantages@2x.webp 2x">
+        <source type="image/webp" srcset="img/main/advantages/background-advantages-mobile@1x.webp, img/main/advantages/background-advantages-mobile@2x.webp 2x">
+        <source type="image/webp" srcset="img/main/advantages/background-advantages@1x.webp, img/main/advantages/background-advantages@2x.webp 2x">
         <img class="advantages__picture" src="img/main/advantages/background-advantages@1x.jpg" width="1366" height="562" srcset="img/main/advantages/background-advantages@2x.jpg" alt="Фотография Антарктики">
       </picture>
     </section>
@@ -120,21 +120,21 @@
           <li class="features__item">
             <h3 class="features__service-name">Круиз &laquo;Астория&raquo;</h3>
             <picture class="features__picture">
-              <source type="image/webp" sizes="(max-width: 767px) 20vw" srcset="img/main/features/astoria-mobile@1x.webp, img/main/features/astoria-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/features/astoria-mobile@1x.webp, img/main/features/astoria-mobile@2x.webp 2x">
               <source type="image/webp" srcset="img/main/features/astoria@1x.webp, img/main/features/astoria@2x.webp 2x">
               <img src="img/main/features/astoria@1x.jpg" srcset="img/main/features/astoria@2x.jpg" width="260" height="386" alt="Круиз Астория">
             </picture>
             <div class="features__body">
               <h3 class="features__service-name">Круиз &laquo;Астория&raquo;</h3>
               <dl class="features__description-list">
-                <dt class="features__description-term">Маршрут</dt>
-                <dd class="features__description-definition">Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида</dd>
-                <dt class="features__description-term">Порт отправления</dt>
-                <dd class="features__description-definition">Ушуайя</dd>
-                <dt class="features__description-term">Продолжительность</dt>
-                <dd class="features__description-definition">11&nbsp;дней</dd>
-                <dt class="features__description-term">Цена</dt>
-                <dd class="features__description-definition">от&nbsp;11500&nbsp;$</dd>
+                <dt>Маршрут</dt>
+                <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида</dd>
+                <dt>Порт отправления</dt>
+                <dd>Ушуайя</dd>
+                <dt>Продолжительность</dt>
+                <dd>11&nbsp;дней</dd>
+                <dt>Цена</dt>
+                <dd>от&nbsp;11500&nbsp;$</dd>
               </dl>
               <div class="features__button-wrapper">
                 <a href="#" class="features__button">Забронировать</a>
@@ -144,21 +144,21 @@
           <li class="features__item">
             <h3 class="features__service-name">Круиз &laquo;Элайн&raquo;</h3>
             <picture class="features__picture">
-              <source type="image/webp" sizes="(max-width: 767px) 100vw" srcset="img/main/features/leonar-mobile@1x.webp, img/main/features/leonar-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/features/leonar-mobile@1x.webp, img/main/features/leonar-mobile@2x.webp 2x">
               <source type="image/webp" srcset="img/main/features/leonar@1x.webp, img/main/features/leonar@2x.webp 2x">
               <img src="img/main/features/leonar@1x.jpg" srcset="img/main/features/leonar@2x.jpg" width="260" height="386" alt="Круиз Элайн">
             </picture>
             <div class="features__body">
               <h3 class="features__service-name">Круиз &laquo;Элайн&raquo;</h3>
               <dl class="features__description-list">
-                <dt class="features__description-term">Маршрут</dt>
-                <dd class="features__description-definition">Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</dd>
-                <dt class="features__description-term">Порт отправления</dt>
-                <dd class="features__description-definition">Буэнос-Айрес</dd>
-                <dt class="features__description-term">Продолжительность</dt>
-                <dd class="features__description-definition">20&nbsp;дней</dd>
-                <dt class="features__description-term">Цена</dt>
-                <dd class="features__description-definition">от&nbsp;14500&nbsp;$</dd>
+                <dt>Маршрут</dt>
+                <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</dd>
+                <dt>Порт отправления</dt>
+                <dd>Буэнос-Айрес</dd>
+                <dt>Продолжительность</dt>
+                <dd>20&nbsp;дней</dd>
+                <dt>Цена</dt>
+                <dd>от&nbsp;14500&nbsp;$</dd>
               </dl>
               <div class="features__button-wrapper">
                 <a href="#" class="features__button">Забронировать</a>
@@ -168,21 +168,21 @@
           <li class="features__item">
             <h3 class="features__service-name">Круиз &laquo;Атлантис&raquo;</h3>
             <picture class="features__picture">
-              <source type="image/webp" sizes="(max-width: 767px) 100vw" srcset="img/main/features/atlantis-mobile@1x.webp, img/main/features/atlantis-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/features/atlantis-mobile@1x.webp, img/main/features/atlantis-mobile@2x.webp 2x">
               <source type="image/webp" srcset="img/main/features/atlantis@1x.webp, img/main/features/atlantis@2x.webp 2x">
               <img src="img/main/features/atlantis@1x.jpg" srcset="img/main/features/atlantis@2x.jpg" width="260" height="386" alt="Круиз Атлантис">
             </picture>
             <div class="features__body">
               <h3 class="features__service-name">Круиз &laquo;Атлантис&raquo;</h3>
               <dl class="features__description-list">
-                <dt class="features__description-term">Маршрут</dt>
-                <dd class="features__description-definition">Аргентина&nbsp;&mdash; Южная Георгия и&nbsp;Южные Сандвичевы Острова&nbsp;&mdash; Антарктида</dd>
-                <dt class="features__description-term">Порт отправления</dt>
-                <dd class="features__description-definition">Ушуайя</dd>
-                <dt class="features__description-term">Продолжительность</dt>
-                <dd class="features__description-definition">15&nbsp;дней</dd>
-                <dt class="features__description-term">Цена</dt>
-                <dd class="features__description-definition">от&nbsp;14500&nbsp;$</dd>
+                <dt>Маршрут</dt>
+                <dd>Аргентина&nbsp;&mdash; Южная Георгия и&nbsp;Южные Сандвичевы Острова&nbsp;&mdash; Антарктида</dd>
+                <dt>Порт отправления</dt>
+                <dd>Ушуайя</dd>
+                <dt>Продолжительность</dt>
+                <dd>15&nbsp;дней</dd>
+                <dt>Цена</dt>
+                <dd>от&nbsp;14500&nbsp;$</dd>
               </dl>
               <div class="features__button-wrapper">
                 <a href="#" class="features__button">Забронировать</a>
@@ -192,21 +192,21 @@
           <li class="features__item">
             <h3 class="features__service-name">Круиз &laquo;Одиссей&raquo;</h3>
             <picture class="features__picture">
-              <source type="image/webp" sizes="(max-width: 767px) 100vw" srcset="img/main/features/odissey-mobile@1x.webp, img/main/features/odissey-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/features/odissey-mobile@1x.webp, img/main/features/odissey-mobile@2x.webp 2x">
               <source type="image/webp" srcset="img/main/features/odissey@1x.webp, img/main/features/odissey@2x.webp 2x">
               <img src="img/main/features/odissey@1x.jpg" srcset="img/main/features/odissey@2x.jpg" width="260" height="386" alt="Круиз Одиссей">
             </picture>
             <div class="features__body">
               <h3 class="features__service-name">Круиз &laquo;Одиссей&raquo;</h3>
               <dl class="features__description-list">
-                <dt class="features__description-term">Маршрут</dt>
-                <dd class="features__description-definition">Чили&nbsp;&mdash; Антарктида</dd>
-                <dt class="features__description-term">Порт отправления</dt>
-                <dd class="features__description-definition">Пунта-Аренас</dd>
-                <dt class="features__description-term">Продолжительность</dt>
-                <dd class="features__description-definition">13&nbsp;дней</dd>
-                <dt class="features__description-term">Цена</dt>
-                <dd class="features__description-definition">от&nbsp;9700&nbsp;$</dd>
+                <dt>Маршрут</dt>
+                <dd>Чили&nbsp;&mdash; Антарктида</dd>
+                <dt>Порт отправления</dt>
+                <dd>Пунта-Аренас</dd>
+                <dt>Продолжительность</dt>
+                <dd>13&nbsp;дней</dd>
+                <dt>Цена</dt>
+                <dd>от&nbsp;9700&nbsp;$</dd>
               </dl>
               <div class="features__button-wrapper">
                 <a href="#" class="features__button">Забронировать</a>
@@ -216,21 +216,21 @@
           <li class="features__item">
             <h3 class="features__service-name">Круиз &laquo;Олимпия&raquo;</h3>
             <picture class="features__picture">
-              <source type="image/webp" sizes="(max-width: 767px) 100vw" srcset="img/main/features/olimpia-mobile@1x.webp, img/main/features/olimpia-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/features/olimpia-mobile@1x.webp, img/main/features/olimpia-mobile@2x.webp 2x">
               <source type="image/webp" srcset="img/main/features/olimpia@1x.webp, img/main/features/olimpia@2x.webp 2x">
               <img src="img/main/features/olimpia@1x.jpg" srcset="img/main/features/olimpia@2x.jpg" width="260" height="386" alt="Круиз Олимпия">
             </picture>
             <div class="features__body">
               <h3 class="features__service-name">Круиз &laquo;Олимпия&raquo;"</h3>
               <dl class="features__description-list">
-                <dt class="features__description-term">Маршрут</dt>
-                <dd class="features__description-definition">Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида</dd>
-                <dt class="features__description-term">Порт отправления</dt>
-                <dd class="features__description-definition">Ушуайя</dd>
-                <dt class="features__description-term">Продолжительность</dt>
-                <dd class="features__description-definition">21&nbsp;день</dd>
-                <dt class="features__description-term">Цена</dt>
-                <dd class="features__description-definition">от&nbsp;18600&nbsp;$</dd>
+                <dt>Маршрут</dt>
+                <dd>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида</dd>
+                <dt>Порт отправления</dt>
+                <dd>Ушуайя</dd>
+                <dt>Продолжительность</dt>
+                <dd>21&nbsp;день</dd>
+                <dt>Цена</dt>
+                <dd>от&nbsp;18600&nbsp;$</dd>
               </dl>
               <div class="features__button-wrapper">
                 <a href="#" class="features__button">Забронировать</a>
@@ -240,21 +240,21 @@
           <li class="features__item">
             <h3 class="features__service-name">Круиз &laquo;Аврора&raquo;</h3>
             <picture class="features__picture">
-              <source type="image/webp" sizes="(max-width: 767px) 100vw" srcset="img/main/features/avrora-mobile@1x.webp, img/main/features/avrora-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/features/avrora-mobile@1x.webp, img/main/features/avrora-mobile@2x.webp 2x">
               <source type="image/webp" srcset="img/main/features/avrora@1x.webp, img/main/features/avrora@2x.webp 2x">
               <img src="img/main/features/avrora@1x.jpg" srcset="img/main/features/avrora@2x.jpg" width="260" height="386" alt="Круиз Аврора">
             </picture>
             <div class="features__body">
               <h3 class="features__service-name">Круиз &laquo;Аврора&raquo;</h3>
               <dl class="features__description-list">
-                <dt class="features__description-term">Маршрут</dt>
-                <dd class="features__description-definition">Аргентина&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</dd>
-                <dt class="features__description-term">Порт отправления</dt>
-                <dd class="features__description-definition">Ушуайя</dd>
-                <dt class="features__description-term">Продолжительность</dt>
-                <dd class="features__description-definition">14&nbsp;дней</dd>
-                <dt class="features__description-term">Цена</dt>
-                <dd class="features__description-definition">от&nbsp;11700&nbsp;$</dd>
+                <dt>Маршрут</dt>
+                <dd>Аргентина&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</dd>
+                <dt>Порт отправления</dt>
+                <dd>Ушуайя</dd>
+                <dt>Продолжительность</dt>
+                <dd>14&nbsp;дней</dd>
+                <dt>Цена</dt>
+                <dd>от&nbsp;11700&nbsp;$</dd>
               </dl>
               <div class="features__button-wrapper">
                 <a href="#" class="features__button">Забронировать</a>
@@ -264,21 +264,21 @@
           <li class="features__item">
             <h3 class="features__service-name">Круиз &laquo;Леонор&raquo;</h3>
             <picture class="features__picture">
-              <source type="image/webp" sizes="(max-width: 767px) 100vw" srcset="img/main/features/leonar-mobile@1x.webp, img/main/features/leonar-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/features/leonar-mobile@1x.webp, img/main/features/leonar-mobile@2x.webp 2x">
               <source type="image/webp" srcset="img/main/features/leonar@1x.webp, img/main/features/leonar@2x.webp 2x">
               <img src="img/main/features/leonar@1x.jpg" srcset="img/main/features/leonar@2x.jpg" width="260" height="386" alt="Круиз Леонор">
             </picture>
             <div class="features__body">
               <h3 class="features__service-name">Круиз &laquo;Леонор&raquo;</h3>
               <dl class="features__description-list">
-                <dt class="features__description-term">Маршрут</dt>
-                <dd class="features__description-definition">Чили&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида&nbsp;&mdash; Аргентина</dd>
-                <dt class="features__description-term">Порт отправления</dt>
-                <dd class="features__description-definition">Пунта-Аренас</dd>
-                <dt class="features__description-term">Продолжительность</dt>
-                <dd class="features__description-definition">17&nbsp;дней</dd>
-                <dt class="features__description-term">Цена</dt>
-                <dd class="features__description-definition">от&nbsp;12500&nbsp;$</dd>
+                <dt>Маршрут</dt>
+                <dd>Чили&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида&nbsp;&mdash; Аргентина</dd>
+                <dt>Порт отправления</dt>
+                <dd>Пунта-Аренас</dd>
+                <dt>Продолжительность</dt>
+                <dd>17&nbsp;дней</dd>
+                <dt>Цена</dt>
+                <dd>от&nbsp;12500&nbsp;$</dd>
               </dl>
               <div class="features__button-wrapper">
                 <a href="#" class="features__button">Забронировать</a>
@@ -288,21 +288,21 @@
           <li class="features__item">
             <h3 class="features__service-name">Круиз &laquo;Минион&nbsp;&mdash; 1&raquo;</h3>
             <picture class="features__picture">
-              <source type="image/webp" sizes="(max-width: 767px) 100vw" srcset="img/main/features/minion-mobile@1x.webp, img/main/features/minion-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/features/minion-mobile@1x.webp, img/main/features/minion-mobile@2x.webp 2x">
               <source type="image/webp" srcset="img/main/features/minion@1x.webp, img/main/features/minion@2x.webp 2x">
               <img src="img/main/features/minion@1x.jpg" srcset="img/main/features/minion@2x.jpg" width="260" height="386" alt="Круиз Минион - 1">
             </picture>
             <div class="features__body">
               <h3 class="features__service-name">Круиз &laquo;Минион&nbsp;&mdash; 1&raquo;</h3>
               <dl class="features__description-list">
-                <dt class="features__description-term">Маршрут</dt>
-                <dd class="features__description-definition">Аргентина&nbsp;&mdash; Антарктида</dd>
-                <dt class="features__description-term">Порт отправления</dt>
-                <dd class="features__description-definition">Ушуайя</dd>
-                <dt class="features__description-term">Продолжительность</dt>
-                <dd class="features__description-definition">11&nbsp;дней</dd>
-                <dt class="features__description-term">Цена</dt>
-                <dd class="features__description-definition">от&nbsp;12300&nbsp;$</dd>
+                <dt>Маршрут</dt>
+                <dd>Аргентина&nbsp;&mdash; Антарктида</dd>
+                <dt>Порт отправления</dt>
+                <dd>Ушуайя</dd>
+                <dt>Продолжительность</dt>
+                <dd>11&nbsp;дней</dd>
+                <dt>Цена</dt>
+                <dd>от&nbsp;12300&nbsp;$</dd>
               </dl>
               <div class="features__button-wrapper">
                 <a href="#" class="features__button">Забронировать</a>
@@ -345,7 +345,7 @@
         </div>
       </div>
       <picture class="form__picture-wrapper">
-        <source type="image/webp" sizes="(max-width: 767px) 100vw" srcset="img/main/form/background-form-mobile@1x.webp, img/main/form/background-form-mobile@2x.webp 2x">
+        <source type="image/webp"  srcset="img/main/form/background-form-mobile@1x.webp, img/main/form/background-form-mobile@2x.webp 2x">
         <source type="image/webp" srcset="img/main/form/background-form@1x.webp, img/main/form/background-form@2x.webp 2x">
         <img src="img/main/form/background-form@1x.jpg" srcset="img/main/form/background-form@2x.jpg" width="1366" height="555" alt="Фотография Антарктики">
       </picture>
@@ -395,16 +395,16 @@
         </a>
         <ul class="footer__menu-list">
           <li class="footer__menu-item">
-            <button class="footer__menu-link menu__advantages" type="button">Преимущества</button>
+            <button class="footer__menu-link footer__menu-advantages" type="button">Преимущества</button>
           </li>
           <li class="footer__menu-item">
             <a href="#" class="footer__menu-link">Направления</a>
           </li>
           <li class="footer__menu-item">
-            <button class="footer__menu-link menu__features" type="button">Ближайшие круизы</button>
+            <button class="footer__menu-link footer__menu-features" type="button">Ближайшие круизы</button>
           </li>
           <li class="footer__menu-item">
-            <button class="footer__menu-link menu__contacts" type="button">Контакты</button>
+            <button class="footer__menu-link footer__menu-contacts" type="button">Контакты</button>
           </li>
         </ul>
         <ul class="footer__social-list">

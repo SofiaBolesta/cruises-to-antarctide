@@ -35,7 +35,7 @@
   }
 }
 
-.header__burger span {
+.header__burger-span {
   position: absolute;
   width: 24px;
   height: 2px;
@@ -45,39 +45,35 @@
   will-change: transform;
 }
 
-.header__burger:hover span,
-.header__burger:focus span,
-.header__burger:active span {
+.header__burger:hover .header__burger-span,
+.header__burger:focus .header__burger-span,
+.header__burger:active .header__burger-span {
   box-shadow: 0 1px 3px #f9fbfd;
 }
 
-.header__burger span:nth-child(1) {
+.header__burger-span:first-child {
   transform: translateY(-4px);
 }
 
-.header__burger span:nth-child(3) {
+.header__burger-span:last-child {
   transform: translateY(4px);
 }
 
 /* Крестик */
 
-.header__body.open .header__burger span {
+.header__body.open .header__burger-span {
   background-color: #011c40;
 }
 
-.header__body.open .header__burger:hover span {
-  box-shadow: 0 1px 3px #011c40;
-}
-
-.header__body.open .header__burger span:nth-child(1) {
+.header__body.open .header__burger-span:first-child {
   transform: translateY(0) rotate(45deg);
 }
 
-.header__body.open .header__burger span:nth-child(2) {
+.header__body.open .header__burger-span:nth-child(2n) {
   opacity: 0;
 }
 
-.header__body.open .header__burger span:nth-child(3) {
+.header__body.open .header__burger-span:last-child {
   transform: translateY(0) rotate(-45deg);
 }
 
