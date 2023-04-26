@@ -1834,7 +1834,7 @@ button,
 
 .features__button {
   display: block;
-  min-height: 40px;
+  height: 40px;
   -ms-grid-column-align: end;
   justify-self: end;
   width: 100%;
@@ -2808,7 +2808,7 @@ button,
   }
 
   .features__list {
-    grid-template-rows: repeat(auto-fit, minmax(386px, auto));
+    grid-template-rows: repeat(auto-fit, auto);
   }
 
   .features__item {
