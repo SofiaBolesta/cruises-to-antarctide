@@ -59,6 +59,10 @@
   padding: 0;
   list-style-type: none;
 
+  @include vp-1279 {
+    grid-template-columns: repeat(3, minmax(auto, 260px));
+  }
+
   @include vp-1023 {
     grid-template-columns: repeat(auto-fit, minmax(auto, 309px));
     grid-template-rows: repeat(auto-fit, minmax(auto, 386px));
@@ -67,6 +71,7 @@
 
   @include vp-767 {
     grid-template-rows: repeat(auto-fit, auto);
+    grid-template-columns: 100%;
   }
 }
 
@@ -116,6 +121,7 @@
   padding: 27px 25px 25px 25px;
   box-sizing: border-box;
   transition: 1s;
+  overflow: scroll;
 
   @include vp-1023 {
     padding: 27px 35px 26px;
@@ -189,7 +195,7 @@
 
 .features__button {
   display: block;
-  height: 40px;
+  min-height: 40px;
   justify-self: end;
   width: 100%;
   font-weight: 600;
