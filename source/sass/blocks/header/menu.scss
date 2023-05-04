@@ -7,11 +7,12 @@
     right: -335px;
     top: 0;
     width: 302px;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #f9fbfd;
     visibility: hidden;
     transition: transform 0.5s, visibility 0.5s;
     will-change: transform;
+    overflow: auto;
   }
 }
 

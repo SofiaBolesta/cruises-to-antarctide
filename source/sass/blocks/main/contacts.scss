@@ -28,8 +28,9 @@
 
   @include vp-767 {
     display: flex;
-    padding: 60px 0 46px;
+    padding: 60px 0 66px;
     margin: 0 auto;
+    gap: 37px;
     flex-direction: column;
   }
 }
@@ -37,19 +38,20 @@
 .contacts__info-container {
   order: 2;
   align-self: center;
+  gap: 55px;
   max-width: 519px;
 
   @include vp-1023 {
     display: flex;
     flex-direction: column;
-    gap: 55px;
+    gap: 28px;
     margin: -3px 0 0;
   }
 
   @include vp-767 {
     order: 1;
     width: 100%;
-    gap: 28px;
+    gap: 0;
   }
 }
 
@@ -64,7 +66,7 @@
   }
 
   @include vp-767 {
-    margin: 0 0 31px;
+    margin: 0 0 25px;
     letter-spacing: 0.1px;
   }
 }
@@ -131,7 +133,7 @@
   top: 0;
 
   @include vp-1023 {
-    top: 3px;
+    top: 6px;
   }
 
   @include vp-767 {

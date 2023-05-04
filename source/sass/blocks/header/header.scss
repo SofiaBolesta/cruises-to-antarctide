@@ -21,7 +21,7 @@
   cursor: pointer;
   display: none;
   outline: none;
-  width: 30px;
+  width: 37px;
   height: 51px;
   padding: 10px;
   border: none;
@@ -52,7 +52,11 @@
 }
 
 .header__burger-span:first-child {
-  transform: translateY(-4px);
+  transform: translateY(-8px);
+}
+
+.header__burger-span:nth-child(2n) {
+  transform: translateY(-2px);
 }
 
 .header__burger-span:last-child {
