@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {checkViewport} from './burger-menu';
+import {initMenu} from './burger-menu';
 import {menuScroll} from './menu-scroll';
 import {initPhoneMask} from './phone-mask';
 
@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   iosVhFix();
   menuScroll();
-  checkViewport();
+  initMenu();
   // Modules
   // ---------------------------------
 
